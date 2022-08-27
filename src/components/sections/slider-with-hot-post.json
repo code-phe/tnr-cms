@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_slider_with_hot_posts",
+  "info": {
+    "displayName": "Slider with hot post"
+  },
+  "options": {},
+  "attributes": {
+    "sliders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.slider-item"
+    }
+  }
+}

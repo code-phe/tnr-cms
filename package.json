@@ -1,15 +1,37 @@
 {
-  "name": "tnr-cms",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "develop:backend": "yarn --cwd backend develop",
-    "develop:frontend": "wait-on http://localhost:1337/admin && yarn --cwd frontend develop",
-    "develop": "cross-env FORCE_COLOR=1 npm-run-all -l -p develop:*"
+  "dependencies": {
+    "@strapi/plugin-graphql": "^4.0.5",
+    "@strapi/plugin-i18n": "4.3.4",
+    "@strapi/plugin-users-permissions": "4.3.4",
+    "@strapi/strapi": "4.3.4",
+    "fs-extra": "^10.0.0",
+    "lodash.set": "^4.3.2",
+    "mime-types": "^2.1.27",
+    "pg": "8.6.0",
+    "strapi-plugin-placeholder": "^4.3.6"
   },
-  "devDependencies": {
-    "npm-run-all": "4.1.5",
-    "wait-on": "5.2.1",
-    "cross-env": "7.0.3"
-  }
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "08e09cea-9d56-41b5-92e3-a04b8e64b8c9",
+    "template": "@strapi/template-blog@^2.0.0",
+    "starter": "@strapi/starter-gatsby-blog"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
