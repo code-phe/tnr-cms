@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_slider_items",
   "info": {
-    "displayName": "SliderItem"
+    "displayName": "SliderItem",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,14 +10,18 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "name": {
+      "type": "string"
     }
   }
 }

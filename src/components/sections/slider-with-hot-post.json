@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_slider_with_hot_posts",
   "info": {
-    "displayName": "Slider with hot post"
+    "displayName": "Slider with hot post",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,6 +10,11 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.slider-item"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
     }
   }
 }

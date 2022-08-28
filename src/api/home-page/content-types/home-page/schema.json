@@ -25,8 +25,8 @@
       "type": "dynamiczone",
       "components": [
         "shared.media",
-        "shared.slider",
-        "sections.our-services"
+        "sections.our-services",
+        "sections.slider-with-hot-post"
       ]
     }
   }

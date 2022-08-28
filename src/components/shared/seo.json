@@ -23,6 +23,28 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "metaSocial": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.meta-social"
+    },
+    "keywords": {
+      "type": "text",
+      "regex": "[^,]+"
+    },
+    "metaRobots": {
+      "type": "string",
+      "regex": "[^,]+"
+    },
+    "structuredData": {
+      "type": "json"
+    },
+    "metaViewport": {
+      "type": "string"
+    },
+    "canonicalURL": {
+      "type": "string"
     }
   }
 }
