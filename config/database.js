@@ -2,7 +2,6 @@ const parse = require('pg-connection-string').parse;
 
 module.exports = ({ env }) => {
   const config = parse(env('DATABASE_URL') || '');
-  console.log(config)
 
   const connection = {
     host: config.host || env('DATABASE_HOST', '127.0.0.1'),
