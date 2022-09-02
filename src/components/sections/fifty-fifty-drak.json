@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_fifty_fifty_draks",
+  "info": {
+    "displayName": "fifty-fifty-drak"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.rich-text"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    }
+  }
+}

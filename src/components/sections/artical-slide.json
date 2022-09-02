@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_artical_slides",
+  "info": {
+    "displayName": "Artical slide",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    },
+    "isDark": {
+      "type": "boolean"
+    }
+  }
+}

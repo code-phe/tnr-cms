@@ -24,9 +24,11 @@
       },
       "type": "dynamiczone",
       "components": [
-        "shared.media",
         "sections.our-services",
-        "sections.slider-with-hot-post"
+        "sections.slider-with-hot-post",
+        "sections.artical-slide",
+        "sections.fifty-fifty-drak",
+        "sections.partner-slide"
       ]
     }
   }
