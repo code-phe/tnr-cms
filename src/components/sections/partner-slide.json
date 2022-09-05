@@ -1,16 +1,17 @@
 {
   "collectionName": "components_sections_partner_slides",
   "info": {
-    "displayName": "Partner slide"
+    "displayName": "Partner slide",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
       "type": "string"
     },
-    "partner": {
+    "partners": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::partner.partner"
     }
   }
