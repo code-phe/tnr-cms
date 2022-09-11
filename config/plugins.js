@@ -27,4 +27,24 @@ module.exports = ({ env }) => ({
   //     },
   //   },
   // },
+  menus: {
+    config: {
+      layouts: {
+        menuItem: {
+          link: [
+            {
+              input: {
+                label: 'Custom Field Label',
+                name: 'custom_field',
+                type: 'text',
+              },
+              grid: {
+                col: 6,
+              },
+            },
+          ],
+        },
+      },
+    },
+  },
 });
