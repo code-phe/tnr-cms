@@ -1,50 +1,21 @@
+const a = require('strapi-provider-upload-minio-ce-2')
 module.exports = ({ env }) => ({
-  // placeholder: {
-  //   enabled: true,
-  //   config: {
-  //     size: 10,
-  //   },
-  // },
-  // upload: {
-  //   config: {
-  //     provider: "aws-s3",
-  //     providerOptions: {
-  //       accessKeyId: env("AWS_ACCESS_KEY_ID"),
-  //       secretAccessKey: env("AWS_ACCESS_SECRET"),
-  //       region: env("AWS_REGION"),
-  //       params: {
-  //         Bucket: env("AWS_BUCKET_NAME"),
-  //       },
-  //     },
-  //     // These parameters could solve issues with ACL public-read access — see [this issue](https://github.com/strapi/strapi/issues/5868) for details
-  //     actionOptions: {
-  //       upload: {
-  //         ACL: null,
-  //       },
-  //       uploadStream: {
-  //         ACL: null,
-  //       },
-  //     },
-  //   },
-  // },
-  menus: {
+  upload: {
     config: {
-      layouts: {
-        menuItem: {
-          link: [
-            {
-              input: {
-                label: 'Custom Field Label',
-                name: 'custom_field',
-                type: 'text',
-              },
-              grid: {
-                col: 6,
-              },
-            },
-          ],
-        },
+      provider: "strapi-provider-upload-minio-ce-2",
+      providerOptions: {
+        accessKey: env('MINIO_ACCESS_KEY'),
+        secretKey: env('MINIO_SECRET_KEY'),
+        bucket: env('MINIO_BUCKET'),
+        endpointSSL: env('MINIO_USE_SSL'),
+        endPoint: env('MINIO_ENDPOINT'),
+        port: env('MINIO_PORT'),
+        host: env('MINIO_HOST'),
+        hostSSL: env('MINIO_USE_SSL'),
+        folder: env('MINIO_FOLDER'),
       },
     },
   },
+  navigation: { enabled: true },
+  graphql: { enabled: true },
 });
