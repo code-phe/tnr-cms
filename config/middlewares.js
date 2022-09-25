@@ -12,6 +12,7 @@ module.exports = [
             'blob:',
             'dl.airtable.com',
             '103.82.22.123:9000',
+            'https://yourbackendenpoint.dev:9002',
           ],
           'media-src': [
             "'self'",
@@ -19,6 +20,7 @@ module.exports = [
             'blob:',
             'dl.airtable.com',
             '103.82.22.123:9000',
+            'https://yourbackendenpoint.dev:9002',
           ],
           upgradeInsecureRequests: null,
         },
