@@ -26,10 +26,10 @@
       "components": [
         "sections.our-services",
         "sections.slider-with-hot-post",
-        "sections.artical-slide",
-        "sections.fifty-fifty-drak",
         "sections.partner-slide",
-        "sections.contact"
+        "sections.contact",
+        "sections.article-slide",
+        "sections.fifty-fifty-dark"
       ]
     }
   }

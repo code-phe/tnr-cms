@@ -31,7 +31,8 @@
         "shared.quote",
         "shared.rich-text",
         "shared.slider-item",
-        "shared.slider"
+        "shared.slider",
+        "sections.intro"
       ],
       "pluginOptions": {
         "i18n": {
