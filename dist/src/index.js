@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const bootstrap = require("./bootstrap");
 module.exports = {
     /**
@@ -7,7 +8,7 @@ module.exports = {
      *
      * This gives you an opportunity to extend code.
      */
-    register( /*{ strapi }*/) { },
+    register({ strapi }) { },
     /**
      * An asynchronous bootstrap function that runs before
      * your application gets started.
