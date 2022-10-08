@@ -24,21 +24,6 @@
         }
       }
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": [
-        "shared.media",
-        "shared.quote",
-        "shared.rich-text",
-        "shared.slider-item",
-        "shared.slider"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "seo": {
       "type": "component",
       "repeatable": false,
@@ -59,15 +44,28 @@
       "targetField": "name",
       "required": true
     },
-    "intro": {
-      "type": "component",
-      "repeatable": false,
+    "summary": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "sections.intro"
+      "type": "text"
+    },
+    "blocks": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "shared.slider",
+        "shared.slider-item",
+        "shared.rich-text",
+        "shared.quote",
+        "shared.media"
+      ]
     }
   }
 }
