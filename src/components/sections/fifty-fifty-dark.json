@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_sections_fifty_fifty_draks",
+  "collectionName": "components_sections_fifty_fifty_darks",
   "info": {
-    "displayName": "fifty-fifty-drak",
+    "displayName": "fifty-fifty-dark",
     "description": ""
   },
   "options": {},
@@ -18,14 +18,15 @@
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
