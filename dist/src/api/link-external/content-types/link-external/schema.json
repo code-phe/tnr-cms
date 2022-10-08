@@ -1,0 +1,25 @@
+{
+    "kind": "collectionType",
+    "collectionName": "link_externals",
+    "info": {
+        "singularName": "link-external",
+        "pluralName": "link-externals",
+        "displayName": "Link External",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "href": {
+            "type": "string"
+        },
+        "alt": {
+            "type": "string"
+        }
+    }
+}

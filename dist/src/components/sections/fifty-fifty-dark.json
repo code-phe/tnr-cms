@@ -1,0 +1,32 @@
+{
+    "collectionName": "components_sections_fifty_fifty_darks",
+    "info": {
+        "displayName": "fifty-fifty-dark",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "article": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::article.article"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        }
+    }
+}

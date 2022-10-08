@@ -1,0 +1,27 @@
+{
+    "collectionName": "components_shared_slider_items",
+    "info": {
+        "displayName": "SliderItem",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "content": {
+            "type": "text"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "name": {
+            "type": "string"
+        }
+    }
+}
