@@ -7,9 +7,7 @@ module.exports = ({ env }) => {
         database: config.database || env('DATABASE_NAME', 'strapi'),
         user: config.user || env('DATABASE_USERNAME', 'strapi'),
         password: config.password || env('DATABASE_PASSWORD', 'strapi_admin'),
-        ssl: config.host ? {
-            rejectUnauthorized: false,
-        } : env.bool('DATABASE_SSL', false),
+        ssl: false
     };
     return {
         connection: {
