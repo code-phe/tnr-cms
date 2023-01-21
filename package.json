@@ -9,9 +9,8 @@
     "mime-types": "^2.1.27",
     "pg": "^8.8.0",
     "pg-connection-string": "^2.5.0",
-    "strapi-plugin-navigation": "^2.2.1",
+    "strapi-plugin-navigation": "^2.2.3",
     "strapi-plugin-react-editorjs": "^2.0.2",
-    "strapi-provider-upload-minio-ce-2": "^1.1.1",
     "better-sqlite3": "7.4.6"
   },
   "name": "backend",
