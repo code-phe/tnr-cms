@@ -1,0 +1,30 @@
+services:
+  app:
+    image: tnr-cms
+    ports:
+      - 1337:1337
+    environment:
+      HOST: 0.0.0.0
+      PORT: 1337
+      APP_KEYS: MxgyeSOjXIRw/j+/G6pdBg==,/ef3yynpx8qCCxUjP6xhHQ==,k/6LukONrLBgrnNQpT37vw==,LG/Xb1HAIRxjN8cwOfaXpA==
+      API_TOKEN_SALT: nN9baCdQ8mWRAM9BU4tu8Q==
+      ADMIN_JWT_SECRET: kh7YpN8CYC5du5P9s8SuDw==
+      JWT_SECRET: GP50+Pugy8vfSHZMIlFX0A==
+      # database
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_NAME: tnr
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: 123qweasd
+      DATABASE_SSL: false
+  postgres:
+    image: postgres:latest
+    volumes:
+      - tnr-cms:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: tnr
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123qweasd
+
+volumes:
+  tnr-cms:
