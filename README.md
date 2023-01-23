@@ -55,3 +55,11 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+```shell
+# dev
+docker buildx build --platform linux/amd64,linux/arm64 -t tranlehaiquan/tnr-cms:latest .
+
+# production
+docker buildx build --build-arg NODE_ENV=production -t mystrapiapp:latest -f Dockerfile.prod .
+```
