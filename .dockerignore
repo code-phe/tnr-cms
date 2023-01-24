@@ -114,3 +114,6 @@ build
 .strapi-updater.json
 
 dist
+
+.dockerignore
+docker
