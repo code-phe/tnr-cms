@@ -1,4 +1,5 @@
 "use strict";
+import { Strapi } from '@strapi/strapi';
 const bootstrap = require("./bootstrap");
 
 module.exports = {
@@ -8,7 +9,7 @@ module.exports = {
    *
    * This gives you an opportunity to extend code.
    */
-  register(/*{ strapi }*/) {},
+  register( { strapi }: { strapi: Strapi }) {},
 
   /**
    * An asynchronous bootstrap function that runs before
